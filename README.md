@@ -1,2 +1,2 @@
 # chronyd
-Install chronyd inside container
+Install chronyd inside docker container
