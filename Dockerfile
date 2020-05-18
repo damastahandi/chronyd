@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER damasta.hairullah@sugarlive.co.id
+MAINTAINER damasta.hairullah@gmail.com
 # Update the image with the latest packages (recommended)
 RUN yum update -y; yum clean all
 
