@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:8.1.1911
 MAINTAINER damasta.hairullah@gmail.com
 # Update the image with the latest packages (recommended)
 RUN yum update -y; yum clean all
