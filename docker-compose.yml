@@ -9,7 +9,7 @@ services:
    dockerfile: Dockerfile
   volumes:
    - type: bind
-     source: ./chronyd/config/chrony.conf
+     source: ./config/chrony.conf
      target: /etc/chrony.conf
      read_only: false
   ports:
