@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+ chronyd:
+  container_name: ntp-server
+  cap_add:
+   - SYS_TIME
+  build:
+   context: .
+   dockerfile: Dockerfile
+  volumes:
+   - type: bind
+     source: ./chronyd/config/chrony.conf
+     target: /etc/chrony.conf
+     read_only: false
+  ports:
+   - target: 123
+     published: 123
+     protocol: udp
